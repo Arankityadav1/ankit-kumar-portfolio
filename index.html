@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Ankit Kumar | Data Analyst | SQL | Power BI | Excel | Python | Automation</title>
+  <meta name="title" content="Ankit Kumar | Data Analyst | SQL | Power BI | Excel | Python | Automation" />
+  <meta name="description" content="Portfolio of Ankit Kumar, a Data Analyst and MIS Analyst specializing in SQL, Power BI, Advanced Excel, Python, dashboard development, MIS reporting and automation." />
+  <meta name="keywords" content="Ankit Kumar, Data Analyst, MIS Analyst, Power BI Analyst, SQL, Excel, Python, Automation, Business Intelligence, 38 Barracks, Google Apps Script, Dashboard Development, Reporting Automation" />
+  <meta name="author" content="Ankit Kumar" />
+  <link rel="canonical" href="https://ankit-kumar-portfolio.vercel.app/" />
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ankit-kumar-portfolio.vercel.app/" />
+  <meta property="og:title" content="Ankit Kumar | Data Analyst | SQL | Power BI | Excel | Python | Automation" />
+  <meta property="og:description" content="Portfolio of Ankit Kumar, a Data Analyst and MIS Analyst specializing in SQL, Power BI, Advanced Excel, Python, dashboard development, MIS reporting and automation." />
+  <meta property="og:image" content="assets/profile/ankit-dp.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Ankit Kumar | Data Analyst | SQL | Power BI | Excel | Python | Automation" />
+  <meta property="twitter:description" content="Portfolio of Ankit Kumar, a Data Analyst and MIS Analyst specializing in SQL, Power BI, Advanced Excel, Python, dashboard development, MIS reporting and automation." />
+  <meta property="twitter:image" content="assets/profile/ankit-dp.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS Architecture -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ankit Kumar",
+    "jobTitle": "Data Analyst | MIS Analyst",
+    "url": "https://ankit-kumar-portfolio.vercel.app/",
+    "sameAs": [
+      "https://linkedin.com/in/ankit-yadav-125545244",
+      "https://github.com/Arankityadav1"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "India"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "38 Barracks Hotel & Restaurant & Bar"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "JIS College of Engineering"
+    },
+    "knowsAbout": ["SQL", "Power BI", "Excel", "Python", "MIS Reporting", "Google Apps Script", "Workflow Automation", "Data Modeling"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Background Network Overlay -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+  <div class="bg-radial-glow" aria-hidden="true"></div>
+
+  <!-- Custom Desktop Cursor Elements -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       1. PRELOADER
+       ============================================================ -->
+  <div id="preloader" aria-label="Loading portfolio">
+    <div class="preloader-core">
+      <div class="preloader-monogram">AK</div>
+      <div class="preloader-words">
+        DATA <span>•</span> ANALYTICS <span>•</span> AUTOMATION
+      </div>
+      <div class="preloader-progress">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       2. STICKY NAVBAR
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Ankit Kumar - Home">
+        <div class="brand-badge">AK</div>
+        <div class="brand-info">
+          <span class="brand-name">Ankit Kumar</span>
+          <span class="brand-title">Data & MIS Analyst</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinksList">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="assets/resume/Ankit_Kumar_Resume.pdf" target="_blank" download="Ankit_Kumar_Resume.pdf" class="btn btn-primary btn-sm" id="navResumeBtn">
+          <i data-lucide="download" style="width:14px;height:14px;"></i> Download Resume
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <i data-lucide="menu" style="width:22px;height:22px;"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#journey" class="mobile-nav-link">Career Journey</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills & Tools</a></li>
+      <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+      <li><a href="#resume" class="mobile-nav-link">Resume</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact Me</a></li>
+    </ul>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="assets/resume/Ankit_Kumar_Resume.pdf" target="_blank" download="Ankit_Kumar_Resume.pdf" class="btn btn-primary" style="width: 100%;">
+        <i data-lucide="download"></i> Download Resume
+      </a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ============================================================
+         3. HERO SECTION (With Three.js 3D Canvas)
+         ============================================================ -->
+    <section id="hero" class="hero-section" aria-label="Introduction">
+      <!-- 3D Background Canvas -->
+      <div id="heroThreeCanvas" class="hero-bg-canvas" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>Available for Data Analyst & Automation Roles Across India</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            <span id="heroName">Ankit Kumar</span>
+          </h1>
+
+          <div class="hero-headline" id="heroHeadline">
+            Data Analyst | SQL | Power BI | Excel | Python | Automation
+          </div>
+
+          <p class="hero-tagline" id="heroTagline">
+            "I turn raw business data into accurate reporting, interactive dashboards, automated workflows, and actionable insights."
+          </p>
+
+          <p class="hero-subtagline" id="heroSubtagline">
+            From data collection and cleaning to SQL analysis, dashboard development, workflow automation, and management reporting.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View My Projects <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+            </a>
+            <a href="assets/resume/Ankit_Kumar_Resume.pdf" target="_blank" download="Ankit_Kumar_Resume.pdf" class="btn btn-secondary" id="heroResumeBtn">
+              <i data-lucide="file-text" style="width:16px;height:16px;"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i data-lucide="send" style="width:16px;height:16px;"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials" id="heroSocials">
+            <!-- Social pills populated by main.js -->
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-frame">
+              <img src="assets/profile/ankit-dp.jpg" alt="Ankit Kumar Profile" id="heroAvatar" class="avatar-img" />
+            </div>
+
+            <!-- Floating Orbiting Data Chips -->
+            <div class="floating-chip chip-1">
+              <i data-lucide="database" class="chip-icon"></i>
+              <span>SQL & ETL Logic</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <i data-lucide="bar-chart-3" class="chip-icon"></i>
+              <span>Power BI & DAX</span>
+            </div>
+            <div class="floating-chip chip-3">
+              <i data-lucide="zap" class="chip-icon"></i>
+              <span>2h → 15m Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. IMPACT METRIC CARDS
+         ============================================================ -->
+    <section id="metrics" class="metrics-section" aria-label="Key Impact Metrics">
+      <div class="container">
+        <div class="metrics-grid" id="heroMetricsGrid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. ABOUT ME SECTION
+         ============================================================ -->
+    <section id="about" class="section" aria-label="About Ankit Kumar">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Professional Background</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging complex operational data systems with business intelligence and rapid automation.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text glass-card about-card">
+            <p id="aboutBio" style="font-size: 1.05rem; color: #e2e8f0; line-height: 1.7;">I’m Ankit Kumar, a Data &amp; MIS professional currently working as an MIS Analyst at 38 Barracks Hotels &amp; Restaurants, with deep hands-on experience in MIS reporting, operational data analytics, dashboard development, workflow automation, and inventory management. Previously, I worked as a Data Analyst at Brainers Commercial Pvt. Ltd. and completed a comprehensive Data Analyst internship at CETPA Infotech Pvt. Ltd.</p>
+            <p id="aboutBioSecond" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">I hold a B.Tech. in Information Technology from JIS College of Engineering. My core strength lies in bridging raw operational business systems (Petpooja, CRM, ERP, Swiggy, Zomato) with SQL, Advanced Excel, Power BI, Python, and Google Apps Script to deliver reliable reporting, rapid decision support, and measurable time savings.</p>
+
+            <div class="differentiator-box">
+              <div class="differentiator-headline">Key Differentiator</div>
+              <p id="aboutDifferentiator" style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.6;">From repetitive manual work to automated business intelligence. By combining data analysis, SQL, Excel, Power BI, Python and workflow automation, I build reporting systems that reduce manual effort and improve operational visibility.</p>
+            </div>
+          </div>
+
+          <div class="work-across-panel glass-card about-card">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-primary);">What I Deliver</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Comprehensive analytics capabilities across the entire data lifecycle:</p>
+
+            <div class="work-across-grid" id="workAcrossGrid">
+              <!-- Populated by main.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. CAREER JOURNEY (TIMELINE)
+         ============================================================ -->
+    <section id="journey" class="section" aria-label="Career Journey and Progression">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Career Roadmap</span>
+          <h2 class="section-title">Career Journey</h2>
+          <p class="section-subtitle">Consistent progression from IT engineering to enterprise data analytics and operational automation.</p>
+        </div>
+
+        <div class="timeline" id="timelineContainer">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. FEATURED PROJECTS PREVIEW
+         ============================================================ -->
+    <section id="featured-projects" class="section" aria-label="Featured Projects Spotlight">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Flagship Systems</span>
+          <h2 class="section-title">Featured Analytics Projects</h2>
+          <p class="section-subtitle">Enterprise dashboards and automated MIS tools built with real business data.</p>
+        </div>
+
+        <div class="projects-grid" id="featuredProjectsGrid">
+          <!-- Populated by main.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="#projects" class="btn btn-secondary">
+            Explore All Projects & Filter Archive <i data-lucide="arrow-down" style="width:16px;height:16px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. HOW I WORK WITH DATA (8-STEP METHODOLOGY)
+         ============================================================ -->
+    <section id="methodology" class="section" aria-label="Data Analytics Methodology">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Systematic Methodology</span>
+          <h2 class="section-title">How I Work With Data</h2>
+          <p class="section-subtitle">An end-to-end analytical framework ensuring accuracy, scalability, and decisive business value.</p>
+        </div>
+
+        <div class="methodology-grid" id="methodologyGrid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         11. PROFESSIONAL EXPERIENCE
+         ============================================================ -->
+    <section id="experience" class="section" aria-label="Work Experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Professional Track Record</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Real-world operational roles driving MIS reporting, data pipelines, and analytics infrastructure.</p>
+        </div>
+
+        <div class="experience-list" id="experienceList">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         12. ALL PROJECTS (With Filtering & Search)
+         ============================================================ -->
+    <section id="projects" class="section" aria-label="All Projects Portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfolio Archive</span>
+          <h2 class="section-title">All Systems & Dashboards</h2>
+          <p class="section-subtitle">Explore interactive business intelligence dashboards, SQL analytical models, and workflow automations.</p>
+        </div>
+
+        <!-- Controls: Filters, Search, Sort -->
+        <div class="projects-controls">
+          <div class="filters-bar" role="tablist" aria-label="Project Categories">
+            <button class="filter-btn active" data-filter="ALL">All</button>
+            <button class="filter-btn" data-filter="38 BARRACKS">38 Barracks</button>
+            <button class="filter-btn" data-filter="POWER BI">Power BI</button>
+            <button class="filter-btn" data-filter="SQL">SQL</button>
+            <button class="filter-btn" data-filter="AUTOMATION">Automation</button>
+            <button class="filter-btn" data-filter="MIS">MIS</button>
+            <button class="filter-btn" data-filter="SELF WORK">Self Work</button>
+          </div>
+
+          <div class="search-sort-bar">
+            <div class="search-input-wrapper">
+              <i data-lucide="search" class="search-icon" style="width:18px;height:18px;"></i>
+              <input type="text" id="projectSearchInput" class="search-input" placeholder="Search projects by title, technology, keyword..." aria-label="Search projects" />
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="font-size: 0.8125rem; color: var(--text-muted); font-weight: 600;">Sort By:</span>
+              <select id="projectSortSelect" class="sort-select" aria-label="Sort projects">
+                <option value="featured">Featured First</option>
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated by projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         13. SKILLS SECTION & SELF-ASSESSED PROFICIENCY
+         ============================================================ -->
+    <section id="skills" class="section" aria-label="Technical Skills & Competencies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Technical Toolkit</span>
+          <h2 class="section-title">What I Work With</h2>
+          <p class="section-subtitle">Core data tools, programming languages, database architectures, and automation platforms.</p>
+        </div>
+
+        <div class="skills-categories-grid" id="skillsCategoriesGrid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         12. WHY HIRE ME (RECRUITER PERSPECTIVE)
+         ============================================================ -->
+    <section id="why-hire-me" class="section" aria-label="Why Hire Ankit Kumar">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Recruiter Value Proposition</span>
+          <h2 class="section-title">Why Hire Me</h2>
+          <p class="section-subtitle">A practical data professional who pairs technical problem-solving with operational business understanding.</p>
+        </div>
+
+        <div class="why-hire-grid" id="whyHireGrid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         16. CERTIFICATIONS
+         ============================================================ -->
+    <section id="certifications" class="section" aria-label="Professional Certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Verified Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Formal credentials in business intelligence, relational databases, and emerging AI technologies.</p>
+        </div>
+
+        <div class="certs-grid" id="certificationsGrid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         17. EDUCATION
+         ============================================================ -->
+    <section id="education" class="section" aria-label="Academic Education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Formal foundation in Information Technology engineering, mathematics, and data sciences.</p>
+        </div>
+
+        <div class="education-grid" id="educationGrid">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         18. RESUME DOWNLOAD SECTION
+         ============================================================ -->
+    <section id="resume" class="section" aria-label="Resume & CV Download">
+      <div class="container">
+        <div class="resume-box">
+          <div class="resume-content">
+            <div class="resume-info">
+              <span class="section-badge">Curriculum Vitae</span>
+              <h2 style="font-size: 2rem; color: #f8fafc; margin-top: 0.5rem;">Ready to Review My Full Resume?</h2>
+              <p style="color: var(--text-secondary); margin-top: 0.75rem; font-size: 1.05rem;">
+                Download an official PDF summary detailing 1.6+ years of professional experience across 38 Barracks, Brainers Commercial, and CETPA Infotech, complete with verified project metrics and tech stacks.
+              </p>
+
+              <div class="resume-highlights">
+                <span class="resume-tag"><i data-lucide="check" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>10+ Dashboards</span>
+                <span class="resume-tag"><i data-lucide="check" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>15+ Automations</span>
+                <span class="resume-tag"><i data-lucide="check" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>50L+ Records</span>
+                <span class="resume-tag"><i data-lucide="check" style="width:14px;height:13px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>95%+ Accuracy</span>
+              </div>
+            </div>
+
+            <div class="resume-buttons">
+              <a href="assets/resume/Ankit_Kumar_Resume.pdf" target="_blank" download="Ankit_Kumar_Resume.pdf" class="btn btn-primary" id="resumeDownloadBtn">
+                <i data-lucide="download"></i> Download Resume
+              </a>
+              <a href="assets/resume/Ankit_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="resumeViewBtn">
+                <i data-lucide="external-link"></i> View Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         19. CONTACT SECTION
+         ============================================================ -->
+    <section id="contact" class="section" aria-label="Contact Information">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">LET'S TURN DATA INTO DECISIONS.</h2>
+          <p class="section-subtitle">Interested in discussing a data analyst role, reporting automation project, or dashboard build? Send a message.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <h3 style="font-size: 1.35rem; color: var(--text-primary);">Contact Channels</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary);">
+              I'm actively open to full-time roles across India in Data Analytics, MIS, Business Intelligence, and Reporting Automation.
+            </p>
+
+            <div class="contact-channels" id="contactChannels">
+              <!-- Populated by main.js -->
+            </div>
+          </div>
+
+          <div class="contact-form-card glass-card">
+            <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 1.5rem;">Send a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email Address</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="john@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message / Requirement</label>
+                <textarea id="contactMessage" name="message" class="form-control" placeholder="Hi Ankit, we are looking for a Data Analyst to handle reporting automation and dashboards..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="send"></i> Send Message
+              </button>
+
+              <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       20. FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand" style="margin-bottom: 0.75rem;">
+            <div class="brand-badge">AK</div>
+            <div class="brand-info">
+              <span class="brand-name">Ankit Kumar</span>
+            </div>
+          </div>
+          <p id="footerHeadline" style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">
+            Data Analyst | SQL | Power BI | Excel | Python | Automation
+          </p>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+            Noida, Uttar Pradesh, India • Open to opportunities across India
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div>
+            <div class="footer-col-title">Navigation</div>
+            <ul class="footer-links-list">
+              <li><a href="#hero" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#journey" class="footer-link">Journey</a></li>
+              <li><a href="#experience" class="footer-link">Experience</a></li>
+              <li><a href="#skills" class="footer-link">Skills</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Showcase</div>
+            <ul class="footer-links-list">
+              <li><a href="#projects" class="footer-link">All Projects</a></li>
+              <li><a href="#methodology" class="footer-link">Methodology</a></li>
+              <li><a href="#certifications" class="footer-link">Certifications</a></li>
+              <li><a href="#resume" class="footer-link">Resume</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Connect</div>
+            <ul class="footer-links-list">
+              <li><a href="https://linkedin.com/in/ankit-yadav-125545244" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+              <li><a href="https://github.com/Arankityadav1" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+              <li><a href="mailto:ankitraj29234@gmail.com" class="footer-link">Email</a></li>
+              <li><a href="tel:+918102937150" class="footer-link">Phone</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear">2026</span> Ankit Kumar. All rights reserved.
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.75rem;">
+          Designed with Premium Data Intelligence Architecture • Built for Decisive Impact
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       CASE STUDY DETAIL MODAL
+       ============================================================ -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-label="Project Case Study Details">
+    <div class="modal-panel" id="projectModalContent">
+      <!-- Populated dynamically by projects.js -->
+    </div>
+  </div>
+
+  <!-- ============================================================s
+       IMAGE LIGHTBOX
+       ============================================================ -->
+  <div class="lightbox-modal" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Enlarged Image View">
+    <button id="lightboxCloseBtn" class="modal-close-btn" style="position: absolute; top: 20px; right: 20px; z-index: 10001;" aria-label="Close image lightbox">
+      <i data-lucide="x"></i>
+    </button>
+    <button onclick="prevLightboxImage()" class="modal-close-btn" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); z-index: 10001;" aria-label="Previous image">
+      <i data-lucide="chevron-left"></i>
+    </button>
+    <img src="" alt="Enlarged Dashboard Preview" id="lightboxImg" class="lightbox-img" />
+    <button onclick="nextLightboxImage()" class="modal-close-btn" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); z-index: 10001;" aria-label="Next image">
+      <i data-lucide="chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- CDN Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+
+  <!-- Application Modules -->
+  <script src="/js/portfolio-data.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/three-scene.js"></script>
+  <script src="/js/projects.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/contact.js"></script>
+  <script src="/js/skill-icons.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
