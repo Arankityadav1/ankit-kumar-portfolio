@@ -6,14 +6,14 @@
 const portfolioData = {
   personalInfo: {
     name: "Ankit Kumar",
-    headline: "Data Analyst | SQL | Power BI | Excel | Python | Automation",
-    positioning: "Data Analyst + MIS Analyst + Business Intelligence + Data Analytics + Reporting Automation + AI Automation",
-    tagline: "I turn raw business data into accurate reporting, interactive dashboards, automated workflows, and actionable insights.",
-    supportingTagline: "From data collection and cleaning to SQL analysis, dashboard development, workflow automation, and management reporting.",
-    location: "Noida, Uttar Pradesh, India",
+    headline: "Data Management Executive | SQL | Power BI | Excel | Python | Automation",
+    positioning: "Data Management Executive + MIS Analyst + Business Intelligence + Data Analytics + Google Apps Script + Reporting Automation",
+    tagline: "I turn raw business data into organized workbooks, interactive dashboards, automated workflows, and actionable insights.",
+    supportingTagline: "From multi-workbook data management and Google Apps Script automation to SQL analysis, dashboard development, and management reporting.",
+    location: "Ghaziabad, Uttar Pradesh, India",
     openTo: "Open to opportunities across India",
-    currentRole: "MIS Analyst — Operations & Automation",
-    currentCompany: "38 Barracks Hotel & Restaurant & Bar",
+    currentRole: "Data Management Executive",
+    currentCompany: "Micron Enterprises Pvt. Ltd.",
     email: "ankitraj29234@gmail.com",
     phone: "+91 8102937150",
     linkedin: "https://linkedin.com/in/ankit-yadav-125545244",
@@ -68,20 +68,20 @@ const portfolioData = {
   ],
 
   about: {
-    bio: "I’m Ankit Kumar, a Data & MIS professional currently working as an MIS Analyst at 38 Barracks Hotels & Restaurants, with deep hands-on experience in MIS reporting, operational data analytics, dashboard development, workflow automation, and inventory management. Previously, I worked as a Data Analyst at Brainers Commercial Pvt. Ltd. and completed a comprehensive Data Analyst internship at CETPA Infotech Pvt. Ltd.",
-    bioSecond: "I hold a B.Tech. in Information Technology from JIS College of Engineering. My core strength lies in bridging raw operational business systems (Petpooja, CRM, ERP, Swiggy, Zomato) with SQL, Advanced Excel, Power BI, Python, and Google Apps Script to deliver reliable reporting, rapid decision support, and measurable time savings.",
-    keyDifferentiator: "From repetitive manual work to automated business intelligence. By combining data analysis, SQL, Excel, Power BI, Python and workflow automation, I build reporting systems that reduce manual effort and improve operational visibility.",
+    bio: "I’m Ankit Kumar, a Data Management and MIS professional currently working as a Data Management Executive at Micron Enterprises Pvt. Ltd., with deep hands-on experience in business data management, connected Google Sheets workbooks, Google Apps Script automation, and internal web tools. Previously, I worked as an MIS Analyst at 38 Barracks Hotel & Restaurant & Bar, as a Data Analyst at Brainers Commercial Pvt. Ltd., and completed a comprehensive Data Analyst internship at CETPA Infotech Pvt. Ltd.",
+    bioSecond: "I hold a B.Tech. in Information Technology from JIS College of Engineering. My core strength lies in structuring business data workflows across connected workbooks, automating repetitive operational tasks with Google Apps Script, and bridging business systems with SQL, Advanced Excel, Power BI, Python, and JavaScript to deliver reliable reporting, rapid decision support, and measurable time savings.",
+    keyDifferentiator: "From repetitive manual work to automated business intelligence. By combining structured data management, Google Apps Script, SQL, Excel, Power BI, Python, and workflow automation, I build reporting systems and internal tools that reduce manual effort and improve operational visibility.",
     workAcross: [
-      { name: "Data Collection", icon: "database" },
-      { name: "Data Cleaning", icon: "filter" },
-      { name: "SQL Analysis", icon: "code" },
-      { name: "Excel Analysis", icon: "table" },
-      { name: "Power BI", icon: "bar-chart-3" },
-      { name: "MIS Reporting", icon: "file-spreadsheet" },
-      { name: "Dashboard Development", icon: "layout-dashboard" },
+      { name: "Data Management", icon: "database" },
       { name: "Workflow Automation", icon: "zap" },
-      { name: "Inventory Analytics", icon: "boxes" },
-      { name: "Management Reporting", icon: "trending-up" }
+      { name: "Google Apps Script", icon: "code" },
+      { name: "Multi-Workbook Sync", icon: "table" },
+      { name: "SQL Analysis", icon: "database" },
+      { name: "Power BI", icon: "bar-chart-3" },
+      { name: "Excel Modeling", icon: "file-spreadsheet" },
+      { name: "MIS Reporting", icon: "clipboard-check" },
+      { name: "Internal Web Tools", icon: "layout-dashboard" },
+      { name: "Data Validation", icon: "shield-check" }
     ]
   },
 
@@ -92,7 +92,7 @@ const portfolioData = {
       company: "JIS College of Engineering",
       location: "Kalyani, West Bengal",
       type: "Degree Education",
-      description: "Graduated with CGPA 7.50. Deep coursework in Python, Statistics & Probability, SQL & Database Design, Advanced Excel, and Power BI."
+      description: "Graduated with CGPA 7.50. Coursework in Python, Statistics & Probability, SQL & Database Design, Advanced Excel, and Power BI."
     },
     {
       period: "Jul 2025 – Dec 2025",
@@ -111,21 +111,54 @@ const portfolioData = {
       description: "Managed structured repositories with 50,000+ records per project. Cleaned 10+ structured datasets using Python, SQL and Excel. Delivered weekly/monthly Power BI dashboards."
     },
     {
-      period: "May 2026 – Present",
+      period: "May 2026 – Sep 2026",
       role: "MIS Analyst — Operations & Automation",
       company: "38 Barracks Hotel & Restaurant & Bar",
       location: "New Delhi",
       type: "Full-time · On-site",
       description: "Overseeing operational data across 4 outlets & 7+ departments (50L+ records). Built 10+ real-time/dynamic dashboards. Automated 15+ recurring reporting workflows, cutting time from 2 hours to 15 minutes."
+    },
+    {
+      period: "Sep 2026 – Present",
+      role: "Data Management Executive",
+      company: "Micron Enterprises Pvt. Ltd.",
+      location: "Ghaziabad, Uttar Pradesh",
+      type: "Full-time · On-site",
+      description: "Managing and organizing business data across connected Google Sheets workbooks, developing Google Apps Script automations, building internal web interfaces, and contributing to banking-related workflows and data validation."
     }
   ],
 
   experience: [
     {
+      id: "exp-micron",
+      company: "Micron Enterprises Pvt. Ltd.",
+      title: "Data Management Executive",
+      dates: "Sep 2026 – Present",
+      location: "Ghaziabad, Uttar Pradesh",
+      roleType: "Full-time | On-site",
+      summary: "Managing business data operations across connected Google Sheets workbooks, developing Google Apps Script automations, and building internal web tools and business workflows.",
+      responsibilities: [
+        "Manage and organize business data across multiple connected Google Sheets workbooks to maintain high structured data consistency.",
+        "Develop and maintain Google Apps Script automations to simplify repetitive data-management and operational workflows.",
+        "Connect multiple spreadsheets and workbooks to support structured data movement, consolidation, and reporting.",
+        "Develop internal web interfaces and business tools using HTML, CSS, and JavaScript for operational efficiency.",
+        "Contribute to internal banking-related systems and workflow development, with an emphasis on organized data handling and reliable process execution.",
+        "Improve the efficiency and maintainability of internal data workflows, validation rules, and business applications.",
+        "Support data validation, consistency, structured record management, and workflow troubleshooting across operating units."
+      ],
+      tools: ["Google Sheets", "Google Apps Script", "HTML", "CSS", "JavaScript", "Multi-Workbook Integration", "Internal Business Systems", "Workflow Automation", "Data Validation"],
+      metrics: [
+        { label: "Core Scope", value: "Business Data Management" },
+        { label: "Architecture", value: "Connected Workbooks" },
+        { label: "Automation", value: "Apps Script & JS" },
+        { label: "Processes", value: "Banking & Workflows" }
+      ]
+    },
+    {
       id: "exp-38-barracks",
       company: "38 Barracks Hotel & Restaurant & Bar",
       title: "MIS Analyst — Operations & Automation",
-      dates: "May 2026 – Present",
+      dates: "May 2026 – Sep 2026",
       location: "New Delhi · Multi-Outlet",
       roleType: "Full-time | On-site",
       summary: "Leading operational data analytics, management MIS reporting, and process automation across multi-outlet hospitality operations.",

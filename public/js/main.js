@@ -10,34 +10,40 @@ document.addEventListener('DOMContentLoaded', () => {
 function initPortfolioApp() {
   if (typeof portfolioData === 'undefined') {
     console.error('portfolioData not found. Ensure portfolio-data.js is loaded.');
+    const p = document.getElementById('preloader');
+    if (p) p.classList.add('loaded');
     return;
   }
 
-  // Render all dynamic sections
-  renderHeroContent();
-  renderMetrics();
-  renderAboutSection();
-  renderCareerJourney();
-  renderDataMethodology();
-  renderExperience();
-  renderSkills();
-  renderWhyHireMe();
-  renderCertifications();
-  renderEducation();
-  renderResumeSection();
-  renderContactSection();
-  renderFooter();
+  // Render all dynamic sections safely
+  try {
+    renderHeroContent();
+    renderMetrics();
+    renderAboutSection();
+    renderCareerJourney();
+    renderDataMethodology();
+    renderExperience();
+    renderSkills();
+    renderWhyHireMe();
+    renderCertifications();
+    renderEducation();
+    renderResumeSection();
+    renderContactSection();
+    renderFooter();
+  } catch (err) {
+    console.error('Error during section rendering:', err);
+  }
 
-  // Initialize modular controllers
-  if (window.initNavigation) initNavigation();
-  if (window.initProjectsModule) initProjectsModule();
-  if (window.initAnimations) initAnimations();
-  if (window.initThreeScene) initThreeScene();
-  if (window.initContactForm) initContactForm();
+  // Initialize modular controllers safely
+  try { if (window.initNavigation) initNavigation(); } catch (e) { console.warn('Nav init error:', e); }
+  try { if (window.initProjectsModule) initProjectsModule(); } catch (e) { console.warn('Projects init error:', e); }
+  try { if (window.initAnimations) initAnimations(); } catch (e) { console.warn('Animations init error:', e); }
+  try { if (window.initThreeScene) initThreeScene(); } catch (e) { console.warn('Three.js scene error:', e); }
+  try { if (window.initContactForm) initContactForm(); } catch (e) { console.warn('Contact form init error:', e); }
 
   // Re-run lucide icons rendering
   if (window.lucide) {
-    lucide.createIcons();
+    try { lucide.createIcons(); } catch (e) { console.warn('Lucide icon error:', e); }
   }
 }
 
@@ -159,8 +165,7 @@ function renderExperience() {
   if (!container) return;
 
   container.innerHTML = portfolioData.experience.map(exp => {
-    // Strictly take 5 important points
-    const respList = (exp.responsibilities || []).slice(0, 5).map(r => `<li>${r}</li>`).join('');
+    const respList = (exp.responsibilities || []).map(r => `<li>${r}</li>`).join('');
     const toolBadges = exp.tools.map(t => `<span class="tool-tag">${t}</span>`).join('');
     const metricChips = exp.metrics 
       ? `<div class="exp-metric-chips">${exp.metrics.map(m => `<span class="kpi-chip"><strong>${m.label}:</strong> ${m.value}</span>`).join('')}</div>`

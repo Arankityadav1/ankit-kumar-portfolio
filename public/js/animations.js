@@ -7,15 +7,25 @@ function initAnimations() {
   // Preloader transition
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
+    const hidePreloader = () => {
+      preloader.classList.add('loaded');
       setTimeout(() => {
-        preloader.classList.add('loaded');
+        if (preloader) preloader.style.display = 'none';
       }, 500);
-    });
-    // Fallback if load already fired
+    };
+
+    if (document.readyState === 'complete') {
+      setTimeout(hidePreloader, 300);
+    } else {
+      window.addEventListener('load', () => {
+        setTimeout(hidePreloader, 300);
+      });
+    }
+
+    // Safety fallback if load already fired or got delayed
     setTimeout(() => {
       if (!preloader.classList.contains('loaded')) {
-        preloader.classList.add('loaded');
+        hidePreloader();
       }
     }, 1500);
   }
